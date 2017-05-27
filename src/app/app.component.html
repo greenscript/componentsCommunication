@@ -1,0 +1,8 @@
+<section class="col-xs-12">
+  <div class="container">
+    <h1 [style.color]="titleColor">{{ title }}</h1>
+    <input class="form-control" [(ngModel)]="inputColor">
+    <button class="btn btn-success" style="margin: 1em 0;" (click)="addColor()" name="button">Add Color</button>
+    <app-colors [colors]="colors"></app-colors>
+  </div>
+</section>
